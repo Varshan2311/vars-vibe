@@ -86,37 +86,22 @@
     font-weight: 600;
   }
 
-  /* Quote box styling */
-  .quote-box {
-    margin: 2rem auto 0;
-    max-width: 520px;
-    background: #833AB4;
-    color: white;
-    border-radius: 1rem;
-    padding: 20px 30px;
+  /* Quote styling without box */
+  .quote-text {
+    margin-top: 2rem;
     font-size: 1.25rem;
-    font-weight: 500;
-    box-shadow: 0 8px 20px rgba(131,58,180,0.6);
-    position: relative;
     font-style: italic;
-    letter-spacing: 0.02em;
-  }
-  .quote-box::before {
-    content: "“";
-    font-size: 4rem;
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    opacity: 0.2;
-    font-family: Georgia, serif;
+    color: #4b3b75;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
   }
   .quote-author {
-    margin-top: 12px;
     text-align: right;
-    font-size: 1rem;
+    margin-top: 6px;
     font-weight: 700;
-    font-style: normal;
-    opacity: 0.85;
+    color: #6a5780;
   }
 
   /* Responsive */
@@ -127,14 +112,8 @@
     .card-container {
       padding: 1rem;
     }
-    .quote-box {
+    .quote-text {
       font-size: 1.1rem;
-      padding: 15px 20px;
-    }
-    .quote-box::before {
-      font-size: 3rem;
-      left: 15px;
-      top: 8px;
     }
   }
 </style>
@@ -163,7 +142,7 @@
     </div>
   </div>
 
-  <div class="quote-box" aria-label="Inspirational quote">
+  <div class="quote-text" aria-label="Inspirational quote">
     Hardships often prepare ordinary people for an extraordinary destiny
     <div class="quote-author">― CS Lewis</div>
   </div>
